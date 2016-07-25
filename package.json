@@ -1,0 +1,21 @@
+{
+  "name": "pushermon-go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "geojson": "^0.3.0",
+    "handlebars": "^4.0.5",
+    "hapi": "^13.5.0",
+    "inert": "^4.0.1",
+    "ngeohash": "^0.6.0",
+    "node-fetch": "^1.5.3",
+    "pusher": "^1.3.0",
+    "vision": "^4.1.0"
+  }
+}

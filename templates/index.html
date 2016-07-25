@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pushermon Go!</title>
+    <script src="/js/lib/pusher.min.js"></script>
+    <script src='/js/lib/ngeohash.js'></script>
+    <script src='/js/lib/mapbox-gl.js'></script>
+    <link href='/css/lib/mapbox-gl.css' rel='stylesheet' />
+    <link href='/css/main.css' rel='stylesheet' />
+    <script>
+      mapboxgl.accessToken = '{{ mapboxAccessToken }}';
+      let pusher = new Pusher('{{ pusherAccessToken }}', {
+        cluster: '{{ pusherCluster }}',
+        encrypted: true
+      });
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div id="modal" class="hide">
+      <div class="modal-image-container">
+        <img class="modal-image">
+      </div>
+      <div class="modal-name"></div>
+      <div class="modal-info">
+        Types: <span class="types"></span>
+      </div>
+      <div class="modal-hp">
+        <div class="modal-current-hp"></div>
+      </div>
+      <div class="modal-attack">
+        ATTACK!!!
+      </div>
+      <div class="modal-close">
+        <a>X</a>
+      </div>
+    </div>
+
+    <div class="caught"></div>
+
+    <a class="fullscreenToggle nohighlight">Toggle Fullscreen</a>
+
+    <script src='/js/utils.js'></script>
+    <script src='/js/main.js'></script>
+    <script src='/js/modal.js'></script>
+  </body>
+</html>

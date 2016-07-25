@@ -1,0 +1,130 @@
+html, body, #map {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.hide {
+  display: none !important;
+}
+.nohighlight {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#modal {
+  display: block;
+  width: 80%;
+  height: 90%;
+  z-index: 100;
+  background: rgba(41, 78, 128, 0.8);
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: white;
+  border-radius: 5px;
+}
+.modal-image-container {
+  position: relative;
+  height: 250px;
+}
+.modal-image {
+  display: block;
+  margin: 10px auto;
+  height: 250px;
+  width: 250px;
+  transition: .2s;
+}
+.modal-name {
+  font-size: 3em;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+
+.modal-info {
+  text-align: center;
+}
+
+.modal-attack {
+  font-size: 4em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.28);
+  padding: 5px;
+  border: 2px solid;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.modal-hp {
+  margin: 5px auto;
+  width: 200px;
+  border: 1px solid grey;
+  height:8px;
+}
+.modal-current-hp {
+  height:100%;
+  background: #39e239;
+  width: 0;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: 25px;
+  margin: 0 auto;
+  font-size: 2em;
+  border-radius: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+.modal-close a {
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px 15px;
+}
+
+.caught {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 2px solid;
+  max-height: 50px;
+  background: rgba(41, 78, 128, 0.5);
+}
+.caught img {
+  height: 50px;
+}
+
+.moveback {
+  height: 230px;
+  width: 230px;
+  transition: .2s;
+}
+.spinleft {
+  transform: rotate(-10deg);
+  transition: .2s;
+}
+.spinright {
+  transform: rotate(10deg);
+  transition: .2s;
+}
+
+.fullscreenToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(41, 78, 128, 0.5);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
