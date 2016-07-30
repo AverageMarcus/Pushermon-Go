@@ -113,6 +113,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
         }
     });
     update();
+    hideLoading();
   });
 
   // Remove all expired sprites

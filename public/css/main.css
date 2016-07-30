@@ -4,6 +4,23 @@ html, body, #map {
   margin: 0;
   padding: 0;
 }
+body::before {
+  content: 'Loading...';
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 25%;
+  font-size: 2em;
+}
+#loading {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  z-index: 100;
+}
 .hide {
   display: none !important;
 }
